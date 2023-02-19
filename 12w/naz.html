@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form name="vvod">
+        <input type="number" id="num1" placeholder="Введите первое число"><br>
+        <input type="number" id="num2" placeholder="Введите второе число "><br>
+        <input type="text" id="ot"><br>
+        <button>Очистить</button>
+    </form>
+    <div class="d">
+        <button id="plus" onClick="plusing();">+</button>
+        <button id="minus" onClick="m();">-</button>
+        <button id="umnosh" onclick="um();">*</button>
+        <button id="deliti" onclick="d();">/</button>
+    </div>
+    <script>
+       function plusing(){
+        var num=Number(document.getElementById('num1').value);
+        var num1=Number(document.getElementById('num2').value);
+        x=num+num1  
+        var otv=document.getElementById('ot')
+        ot.value=x
+        
+
+       }
+       function m(){
+        var num=Number(document.getElementById('num1').value);
+        var num1=Number(document.getElementById('num2').value);
+        x=num-num1
+        var otv=document.getElementById('ot')
+        ot.value=x
+       }
+       function um(){
+        var num=Number(document.getElementById('num1').value);
+        var num1=Number(document.getElementById('num2').value);
+        x=num*num1
+        var otv=document.getElementById('ot')
+        ot.value=x
+       }
+       function d(){
+        var num=Number(document.getElementById('num1').value);
+        var num1=Number(document.getElementById('num2').value);
+        x=num/num1
+        var otv=document.getElementById('ot')
+        ot.value=x
+       }
+       
+    </script>
+</body>
+</html>
